@@ -1,8 +1,5 @@
-$primary-color: #61dafb;
-$primary-color-tinted: mix(white, $primary-color, 20%);
-$primary-color-darker: mix(black, $primary-color, 50%);
-
-
+@import '../../css/variables.scss';
+@import '../../css/font.scss';
   
   ol, ul {
     padding-left: 30px;

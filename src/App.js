@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
-import TicTacToePage from './components/TicTacToePage';
+import Navbar from './components/Navbar/Navbar';
+import HomePage from './components/HomePage/HomePage';
+import TicTacToePage from './components/TicTacToe/TicTacToePage';
 
 
 class App extends Component {  

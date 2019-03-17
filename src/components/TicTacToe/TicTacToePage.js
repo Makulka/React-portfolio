@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/TicTacToePage.scss';
+import './TicTacToePage.scss';
 import TicTacToeGame from './TicTacToeGame';
 
 const Header = () => {

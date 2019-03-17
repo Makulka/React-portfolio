@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../css/Navbar.scss';
+import './Navbar.scss';
 
 // const NavItem = (props) => {
 //   const pageURI = window.location.pathname+window.location.search;

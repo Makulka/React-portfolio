@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import '../css/HomePage.scss';
+import logo from '../../images/logo.svg';
+import './HomePage.scss';
 
 class Clock extends Component {
   constructor(props) {
