@@ -1,25 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
+import TicTacToePage from './components/TicTacToePage';
 
-class App extends Component {
+
+class App extends Component {  
+  constructor(props) {
+    super(props);
+    this.initialState = { page: "home"};
+    this.state = this.initialState;
+    this.handleHomeClick = this.handleHomeClick.bind(this);
+    this.handleTicClick = this.handleTicClick.bind(this);
+  }
+  handleHomeClick(e) {
+    e.preventDefault();        
+    this.setState({
+      page: "home"
+    });
+  }; 
+  handleTicClick(e) {
+    e.preventDefault(); 
+    this.setState({
+      page: "tic"
+    });
+  }
   render() {
+    if (this.state.page === "home") {
+      var pageContent = <HomePage />
+    } else if (this.state.page === "tic") {
+      pageContent = <TicTacToePage />
+    }
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        < Navbar 
+          page={this.state.page}
+          homeClick={this.handleHomeClick}
+          ticClick={this.handleTicClick}
+        />
+        {pageContent} 
       </div>
     );
   }
