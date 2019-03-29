@@ -3,6 +3,7 @@ import './Navbar.scss';
 import HomePage from '../HomePage/HomePage';
 import TicTacToePage from '../TicTacToe/TicTacToePage';
 import GithubPage from '../Github/GithubPage';
+import QuizPage from '../Quiz/QuizPage';
 import { Route } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 
@@ -17,9 +18,10 @@ class Navbar extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
-              <NavLink to="/home" activeClassName="active" className="nav-link">Home</NavLink>
+              <NavLink to="/index.html" activeClassName="active" className="nav-link">Home</NavLink>
               <NavLink to="/tic-tac-toe" activeClassName="active"className="nav-link">Tic-tac-toe</NavLink>
               <NavLink to="/GitHub" activeClassName="active"className="nav-link">GitHub</NavLink>
+              <NavLink to="/Quiz" activeClassName="active"className="nav-link">Quiz</NavLink>
                 {/* <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Dropdown
                 </a>
@@ -33,9 +35,10 @@ class Navbar extends Component {
             <a className="nav-link portfolio-link" href="http://herebegregs.uk/stana/portfolio/portfolio.html">Main portfolio</a>      
           </div>        
         </nav>
-        <Route path="/home" component={HomePage}/>
+        <Route path="/index.html" component={HomePage}/>
         <Route path="/tic-tac-toe" component={TicTacToePage}/>
         <Route path="/GitHub" component={GithubPage}/>
+        <Route path="/Quiz" component={QuizPage}/>
       </div>
     )
   }

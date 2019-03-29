@@ -43,7 +43,9 @@ const Header = () => {
 const Main = () => {
   return (
     <main className="main"> 
-      <p>Hi, thank you for checking my portfolio. < br/>So far I have included a tic-tac-toe game. < br/> More content is coming soon!
+      <p>Hi, thank you for checking my portfolio. < br/> 
+      Please see the navigation bar at the top for examples of my work.< br/> < br/> 
+      In addition I have also completed a freelance project: a React powered bilingual homepage for a heritage homestead. <a href="https://olesna-1d0d2.firebaseapp.com/home" target="_blank"><span>Link</span></a> 
       </p>
       <img src={logo}  className="mobile-logo" alt="logo" />
     </main>

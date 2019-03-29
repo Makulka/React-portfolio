@@ -1,45 +1,6 @@
 @import '../../css/variables.scss';
 @import '../../css/font.scss';
 
-.content {
-    margin-top: 100px;
-    font-size: calc(10px + 2vmin);
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    .images {
-      position: relative;
-    }
-    img {
-      width: 50px;
-    }
-    h1 {
-      display: inline-block;
-      text-align: center;
-    }
-    .moving-logo {
-      position: absolute;
-      left: 0%;
-      top: 18%;
-      animation: logo-move infinite 5s linear;
-      animation-direction: alternate;
-      @media(max-width: 400px) {
-        display: none;
-      }
-    }
-  }
-  
-  .main {
-    margin-top: 50px;    
-  }
-
   .game-image {    
     margin-right: -20px;
     background: url(../../images/tictactoe.svg);
@@ -57,6 +18,6 @@
 
   @keyframes tic-cycle {
     100% {
-      background-position: -1000px;
+      background-position: -1100px;
     } 
   }

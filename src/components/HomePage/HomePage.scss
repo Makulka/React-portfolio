@@ -1,4 +1,4 @@
-
+ 
 @import '../../css/variables.scss';
 @import '../../css/font.scss';
 
@@ -52,6 +52,22 @@
     height: 50vmin;
     @media(min-width: 440px) {
       display: none;
+    }
+  }
+  a span {
+    color: $primary-color;
+    position: relative;
+    padding-bottom:3px;
+    &:hover {
+      &:after {
+        content: '';
+        position: absolute;
+        width:100%;
+        height: 2px;
+        background: $primary-color;
+        bottom: 0;
+        left: 0;
+      }
     }
   }
 }

@@ -1,0 +1,42 @@
+@import '../../css/variables.scss';
+@import '../../css/font.scss';
+
+.content {
+  margin-top: 100px;
+  font-size: calc(10px + 2vmin);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;    
+}
+
+.main {
+  margin-top: 50px;    
+}
+
+.score-display {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.start-again-button {
+  margin-top: 30px;
+  border-radius: 0.25rem;
+  padding: 5px 10px;
+}
+
+.card-header.quiz-heading {
+  background-color: $primary-color;
+}
+
+ 
